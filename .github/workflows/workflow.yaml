@@ -94,6 +94,12 @@ jobs:
         run: npm run build
         working-directory: './codiquest'
 
+      - name: Override build content
+        run: |
+          if [ -d "build/" ]; then
+            cp -r build/* codiquest/build/
+          fi
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
