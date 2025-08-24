@@ -1,0 +1,1 @@
+const e=[{page:"index"},{page:"first-module",title:"First module"}],o=[],t={title:"Demo",shortDescription:"Welcome to my demo module!",public:!0,linksTo:"demo",image:"codibg.webp",tags:["demo"],isNew:!0};export{e as levels,t as moduleInfo,o as questions};
